@@ -110,9 +110,17 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 2px gray;
+  border: none;
+  cursor: pointer;
 
   /* bottom: 50%; */
 }
+
+.chevron:hover {
+  background-color: #fafafa;
+  box-shadow: 0px 0px 2px lightgrey;
+}
+
 .chevron-right {
   right: -20px;
 }
