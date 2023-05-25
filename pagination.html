@@ -13,7 +13,7 @@
 
       .pagination {
         /* max-width: 400px; */
-        margin: 100px auto;
+        margin: 200px auto;
         display: flex;
         gap: 1rem;
         align-items: center;
@@ -31,10 +31,18 @@
         justify-content: center;
       }
 
+      .chevron:hover {
+        background-color: #087f5b;
+      }
+
       .chevron svg {
         stroke: #087f5b;
         width: 24px;
         height: 24px;
+      }
+
+      .chevron:hover svg {
+        stroke: white;
       }
 
       .numbers {
@@ -49,12 +57,22 @@
         justify-content: center;
         width: 15px;
         height: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .numbers span:nth-child(7):hover {
+        background-color: white;
+        color: black;
+      }
+
+      .numbers span:hover {
+        background-color: #087f5b;
+        color: white;
       }
 
       .numbers > :nth-child(3) {
         background-color: #087f5b;
         color: white;
-        border-radius: 50%;
       }
     </style>
   </head>
