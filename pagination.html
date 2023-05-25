@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pagination</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      .pagination {
+        /* max-width: 400px; */
+        margin: 100px auto;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .chevron {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border: 1.3px solid #087f5b;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .chevron svg {
+        stroke: #087f5b;
+        width: 24px;
+        height: 24px;
+      }
+
+      .numbers {
+        font-size: 16px;
+        display: flex;
+        gap: 1rem;
+      }
+
+      .numbers span {
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        width: 15px;
+        height: 15px;
+      }
+
+      .numbers > :nth-child(3) {
+        background-color: #087f5b;
+        color: white;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagination">
+      <div class="chevron chevron-left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+          width="24px"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </div>
+
+      <div class="numbers">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>...</span>
+        <span>23</span>
+      </div>
+
+      <div class="chevron chevron-right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+          width="24px"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
